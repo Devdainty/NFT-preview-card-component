@@ -64,10 +64,23 @@ main{
   border-radius: 1em;
 }
 
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  main{
+    width: 40em;
+    padding: 2em;
+  }
+}
+
 section.ethereum_picture_container{
   max-width: 28em;
   position: relative;
   margin-bottom: 1.5em;
+}
+
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  section.ethereum_picture_container{
+    max-width: 40em;
+  }
 }
 
 div.ethereum_background{
@@ -99,6 +112,12 @@ img.icon_view{
   transform: translate(-50%, -50%);
 }
 
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  img.icon_view{
+    width: 80px;
+  }
+}
+
 section.ethereum_picture_container:hover img.icon_view{
   visibility: visible;
 }
@@ -107,11 +126,23 @@ section.ethereum_detail{
   max-width: 30em;
 }
 
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  section.ethereum_detail{
+    max-width: 40em;
+  }
+}
+
 h1{
   color: var(--white);
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: .5em;
+}
+
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  h1{
+    font-size: 3.5rem;
+  }
 }
 
 h1:hover{
@@ -125,6 +156,12 @@ p.ethereum_main_paragraph{
   font-weight: 300;
   line-height: 1.6;
   margin-bottom: 1em;
+}
+
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  p.ethereum_main_paragraph{
+    font-size: 2rem;
+  }
 }
 
 div.ethereum_timing{
@@ -149,10 +186,24 @@ div.ethereum_detail_wrapper img{
   height: 20px;
 }
 
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  div.ethereum_detail_wrapper img{
+    width: 15px;
+    height: 22px;
+    margin-right: 1em;
+  }
+}
+
 div.ethereum_detail_wrapper p{
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--cyan);
+}
+
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  div.ethereum_detail_wrapper p{
+    font-size: 1.8rem;
+  }
 }
 
 div.ethereum_timer{
@@ -166,10 +217,24 @@ div.ethereum_timer img{
   height: 18px;
 }
 
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  div.ethereum_timer img{
+    width: 23px;
+    height: 23px;
+    margin-right: 1em;
+  }
+}
+
 div.ethereum_timer p{
   font-size: 1.6rem;
   font-weight: 400;
   color: var(--soft-blue);
+}
+
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  div.ethereum_timer p{
+    font-size: 1.9rem;
+  }
 }
 
 div.page_avatar_wrapper{
@@ -180,15 +245,29 @@ div.page_avatar_wrapper{
 div.page_avatar_wrapper img{
   width: 35px;
   height: 35px;
-  margin-right: 1rem;
+  margin-right: 1em;
   border:2px solid white;
   border-radius: 50%;
+}
+
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  div.page_avatar_wrapper img{
+    width: 40px;
+    height: 40px;
+    margin-right: 1.8em;
+  }
 }
 
 div.page_avatar_wrapper p{
   font-size: 1.6rem;
   font-weight: 300;
   color: var(--soft-blue);
+}
+
+@media (min-width:30em) { /* smartphones, Android phones, landscape iPhone */ 
+  div.page_avatar_wrapper p{
+    font-size: 1.9rem;
+  }
 }
 
 div.page_avatar_wrapper span{
