@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Main-BG: hsl(217, 54%, 11%);
+  --Card-BG: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: var(--Main-BG);
+}
+
+main {
+  margin: 3em auto;
+  background-color: var(--Card-BG);
+  max-width: 300px;
+  padding: 1.3em;
+  border-radius: 0.5em;
+}
+
+.ethereum_img_wrapper {
+  border-radius: 0.5em;
+  width: 100%;
+  margin-bottom: 0.8em;
+  position: relative;
+}
+
+.ethereum_img_wrapper img {
+  border-radius: 0.5em;
+  max-width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  transition: all 0.4s ease;
+  top: 0;
+  width: 100%;
+  height: 255px;
+  border-radius: 0.5em;
+}
+
+.hidden {
+  position: absolute;
+  transition: all 0.4s ease;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.ethereum_img_wrapper:hover .overlay {
+  background: var(--Cyan);
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.ethereum_img_wrapper:hover .hidden {
+  opacity: 1;
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--White);
+  margin-bottom: 0.6em;
+}
+
+h1:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+h1 + p {
+  color: var(--Soft-blue);
+  font-size: 0.85rem;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+
+.etherum_details {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.etherum_details div:first-of-type {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: auto;
+}
+
+.etherum_details div:first-of-type img {
+  margin-right: 0.5em;
+  width: 0.5em;
+}
+
+.etherum_details div:first-of-type p {
+  font-size: 0.75rem;
+  color: var(--Cyan);
+  font-weight: 700;
+}
+
+.etherum_details div:last-of-type {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.etherum_details div:last-of-type img {
+  margin-right: 0.5em;
+  width: 0.8em;
+}
+
+.etherum_details div:last-of-type p {
+  font-size: 0.7rem;
+  color: var(--Soft-blue);
+  font-weight: 400;
+}
+
+.etherum_avatar_wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 0.8em;
+}
+
+.etherum_avatar_wrapper img {
+  width: 1.7em;
+  margin-right: 1em;
+  border-radius: 50%;
+  border: 2px solid var(--White);
+}
+
+.etherum_avatar_wrapper p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--Soft-blue);
+}
+
+.etherum_avatar_wrapper span {
+  color: var(--White);
+}
+
+.etherum_avatar_wrapper span:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
